@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:  url(./images/pattern-circles.svg), url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: top 57px center, top 0 left 0;
+    background-size: auto, auto;
+}
+
+
+header {
+    margin-top: 57px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 145px;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #293356;
+}
+
+.paragraph {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    color: #848EAD;
+    margin-top: 8px;
+}
+
+.firstPart {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstPartHeading {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #848EAD;
+}
+
+.priceAdjuster {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.priceMonthlyDiv {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.price, .priceDesktop {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+
+.monthText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    width: 43px;
+    height: 22px;
+    background: #CFD8EF;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+
+input:checked + label {
+    background: #7AEADF;;
+}
+
+input:checked + label:after {
+    transform: translateX(100%);
+}
+
+
+.billing {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    padding: 0px 12px 0px 44px;
+}
+
+
+.monthlyBillingText, .yearlyBillingText {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+}
+
+.monthlyBillingText {
+    margin-right: 12px;
+}
+
+.yearlyBillingText {
+    margin: 0px 5.5px 0px 12px;
+}
+
+.discountText {
+    display: flex;
+    width: 41px;
+    height: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #FF8D68;
+    background-color: #FEEDE8;
+}
+
+.middleLine {
+    width: 100%;
+    height: 1px;
+    background: #ECF0FB;
+    margin-top: 38px;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.condition1, .condition2, .condition3 {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #848EAD;
+    gap: 16px;
+}
+
+.condition2, .condition3 {
+    margin-top: 11px;
+}
+
+button {
+    margin-top: 33px;
+    margin-bottom: 32px;
+    border: none;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+    background: #293356;
+    border-radius: 20.5px;
+    width: 170px;
+    height: 41px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.secondPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-top: 32px;
+    margin-bottom: 88px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin-top: 41px;
+    cursor: pointer;
+  }
+  
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ecf0fb;
+    width: 100%;
+    border-radius: 5px;
+    height: 8px;
+  }
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #10d8c4;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: #10d8c4;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #A4F3EB;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: #ECF0FB;
+    height: 8px;
+    border-radius: 5px;
+}
+
+
+.greenLine {
+    width: 50%;
+    background: #a4f3eb;
+    border-radius: 5px;
+    height: 8px;
+    top: -8px;
+    position: relative;
+    left: 0;
+}
+
+.priceAdjusterDiv {
+    padding: 0px 24px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.priceMonthlyDivDesktop {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-size: auto, 100%;
+    }
+    header {
+        margin-top: 67px;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 12px;
+    }
+
+    .paragraph br {
+        display: none;
+    }
+
+    main {
+        margin-top: 54px;
+        width: 540px;
+    }
+
+    .priceMonthlyDiv {
+        display: none;
+    }
+
+    .priceMonthlyDivDesktop {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 48px 0px 46px;
+    }
+
+    .priceAdjusterDiv {
+        padding: 0px 48px;
+    }
+
+    .firstPartHeading {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2px;
+    }
+
+    .price, .priceDesktop {
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -1px;
+    }
+
+    .monthText {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    span {
+        display: flex;
+    }
+
+    .discountText {
+        width: 80px;
+    }
+
+    .monthlyBillingText {
+        margin-right: 16px;
+    }
+
+    .yearlyBillingText {
+        margin: 0px 9px 0px 16px;
+    }
+
+    .secondPart {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px 44px 33px 48px;
+    }
+
+    .conditions {
+        align-items: flex-start;
+        margin-top: 0px;
+    }
+
+    .billing {
+        justify-content: flex-end;
+        padding-right: 65px;
+        margin-top: 40px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .greenLine {
+        display: none;
+    }
+  }  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="heading">Simple, traffic-based pricing</h1>
+    <p class="paragraph">Sign-up for our 30-day trial.<br> No credit card required. </p>
+  </header>
+
+
+  <main>
+    <div class="firstPart">
+      <div class="wrapper">
+        <h1 class="firstPartHeading">100K PAGEVIEWS</h1>
+        <div class="priceMonthlyDivDesktop">
+          <p class="priceDesktop">$16.00</p>
+          <p class="monthText">/ month</p>
+        </div>
+      </div>
+
+      <div class="priceAdjusterDiv">
+        <input  class="priceAdjuster" type="range" min="0" max="4" value="2">
+        <div class="greenLine"></div>
+      </div>
+
+      <div class="priceMonthlyDiv">
+        <p class="price">$16.00</p>
+        <p class="monthText">/ month</p>
+      </div>
+
+
+  
+      <div class="billing">
+        <p class="monthlyBillingText">Monthly Billing</p>
+        <input type="checkbox" id="switch" value="no"/>
+        <label for="switch"></label>
+        <p class="yearlyBillingText">Yearly Billing</p>
+        <p class="discountText">-25% &nbsp;<span>discount</span></p>
+      </div>
+  
+    </div>
+  
+    <div class="middleLine"></div>
+  
+  
+    <div class="secondPart">
+      <div class="conditions">
+        <div class="condition1">
+          <img src="./images/icon-check.svg" alt="">
+          <p>Unlimited websites</p>
+        </div>
+    
+        <div class="condition2">
+          <img src="./images/icon-check.svg" alt="">
+          <p>100% data ownership</p>
+        </div>
+    
+        <div class="condition3">
+          <img src="./images/icon-check.svg" alt="">
+          <p>Email reports</p>
+        </div>
+      </div>
+  
+      <div>
+        <button>Start my trial</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
